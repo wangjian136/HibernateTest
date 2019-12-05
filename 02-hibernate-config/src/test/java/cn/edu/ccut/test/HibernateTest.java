@@ -63,4 +63,13 @@ public class HibernateTest {
 			System.out.println(blogs);
 		}
 	}
+	
+	@Test
+	public void testHibernateSession() {
+		Session session1 = factory.openSession();
+		Session session2 = factory.openSession();
+		Session session3 = factory.getCurrentSession();
+		Session session4 = factory.getCurrentSession();
+		System.out.println(session3 == session4);
+	}
 }
