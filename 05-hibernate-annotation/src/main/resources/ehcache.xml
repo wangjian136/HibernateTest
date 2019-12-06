@@ -1,0 +1,15 @@
+<ehcache>
+
+	<!-- Sets the path to the directory where cache .data files are created. 
+		If the path is a Java System Property it is replaced by its value in the 
+		running VM. The following properties are translated: user.home - User's home 
+		directory user.dir - User's current working directory java.io.tmpdir - Default 
+		temp file path -->
+
+	<!--指定二级缓存存放在磁盘上的位置 -->
+	<diskStore path="user.dir" />
+
+	<!--我们可以给每个实体类指定一个对应的缓存，如果没有匹配到该类，则使用这个默认的缓存配置 -->
+	<defaultCache maxElementsInMemory="10000" eternal="false"
+		timeToIdleSeconds="120" timeToLiveSeconds="120" overflowToDisk="true" />
+</ehcache>
