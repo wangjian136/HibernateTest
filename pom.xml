@@ -9,6 +9,7 @@
 	<modules>
 		<module>01-hibernate-hello</module>
 		<module>02-hibernate-config</module>
+		<module>03-hibernate-query</module>
 	</modules>
 
 	<properties>
