@@ -12,6 +12,7 @@
 		<module>03-hibernate-query</module>
 		<module>04-hibernate-object-status</module>
 		<module>05-hibernate-annotation</module>
+		<module>06-hibernate-relation</module>
 	</modules>
 
 	<properties>
